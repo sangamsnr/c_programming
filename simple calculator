@@ -1,0 +1,24 @@
+let num1 = 10 , num2 = 5 , opt = "add",result;
+
+console.log("number that were inputed were" , num1 , "and" , num2 , "\n");
+console.log("you selected", opt , "as an option \n")
+
+switch(opt){
+    case "add":
+        result = num1+num2;
+        break;
+    case "subtract":
+        result = num1-num2;
+        break;
+    case "multiply":
+        result=num1*num2;
+        break;
+    case "divide":
+        result=num1/num2;
+        break;
+    default:
+        console.log("you selected a wrong option\n");
+    
+        
+}
+console.log("the result of the", opt , "operation is" , result);

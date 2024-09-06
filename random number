@@ -1,0 +1,6 @@
+function generateRandom(min, max) {
+    return(Math.random() * (max - min) ) + min;
+  }
+  let randomnum = generateRandom(20 , 30); 
+
+  console.log(randomnum);
