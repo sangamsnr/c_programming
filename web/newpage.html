@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <title> Login</title>
+    </head>
+    <body>
+        <form action="" method = "post">
+            <lable for = "user">Enter User Name</lable>
+            <input type = "text" name = "user" required> <br><br>
+            <label for = "password"> Enter password: </label> <br>
+            <input type = "password" name = "pass"> <br><br>
+            <input type = "submmit" name="login" value="Logion">
+            <a href="register.php">Register</a>
+            </form>
+    </body>
+</html>
+<!--php starts-->
+<?php include ("connection.php");
+if (isset($_POST ['login']))
+?>

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE bookstore SYSTEM "bookstore.dtd">
+<bookstore>
+    <book category="fiction">
+        <title lang="en">The Alchemist</title>
+        <author>sangam sunar</author>
+        <year>1988</year>
+        <price>19.99</price>
+    </book>
+    <book category="science">
+        <title lang="en">A Brief History of Time</title>
+        <author>Stephen Hawking</author>
+        <year>1988</year>
+        <price>14.95</price>
+    </book>
+</bookstore>    

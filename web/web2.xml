@@ -1,0 +1,14 @@
+<root>
+<h:table xmlns:h="https://books.com/">
+<h:tr>
+  <h:td>Web</h:td>
+  <h:td>maths</h:td>
+  </h:tr>
+  </h:table>
+<f:table xmlns:f="https://www.furniture.com/">
+  <f:name> coffee</f:name>
+  <f:width>110</f:width>
+  <f:length> 240 </f:length>
+  </f:table>
+  </root>
+  

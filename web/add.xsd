@@ -1,0 +1,11 @@
+<?xml version = "1.0" encoding = "UTF-8"?>
+<xs:schema xmlns: xs="scheme">
+<xs: element name "Address">
+<xs:ComplexType>
+<xs:sequence>
+<xs:element name="Name" type="xs:String"/>
+<xs:element name="phone" type="xs:int"/>
+<xs:sequence/>
+<xs:ComplexType/>
+<xs:element/>
+<xs:type/>

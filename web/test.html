@@ -1,0 +1,23 @@
+<html>
+<body>
+<b>First Author Name:</b><span id="first"> </span><br>
+<b>Second Author Name:</b><span id="second"></span>
+
+<script>
+var xhttp = new XMLHttpRequest(); xhttp.onreadystatechange = function() {
+if (this.readyState == 4 && this.status == 200) { myFunction(this);
+} };
+
+// readyState==4, means http request fineshed and response is ready
+// status == 200,is process is successed or ok
+
+xhttp.open("GET", "test.xml", true); xhttp.send();
+function myFunction(xml) {
+var xmlDoc = xml.responseXML; document.getElementById("first").innerHTML =
+xmlDoc.getElementsByTagName("author")[0].childNodes[0].nodeValue;
+document.getElementById("second").innerHTML =
+xmlDoc.getElementsByTagName("author")[1].childNodes[0].nodeValue;
+}
+</script>
+</body>
+</html>

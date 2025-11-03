@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>My CV</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #f4f4f4;
+      margin: 0;
+      padding: 20px;
+      color: #333;
+    }
+
+    .cv-container {
+      background: #fff;
+      max-width: 900px;
+      margin: auto;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .header {
+      display: flex;
+      align-items: center;
+      border-bottom: 2px solid #e0e0e0;
+      padding-bottom: 20px;
+    }
+
+    .profile-pic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 20px;
+    }
+
+    .name-title {
+      flex: 1;
+    }
+
+    .name-title h1 {
+      margin: 0;
+      font-size: 28px;
+    }
+
+    .name-title p {
+      margin: 5px 0 0;
+      color: #666;
+    }
+
+    .section {
+      margin-top: 30px;
+    }
+
+    .section h2 {
+      color: #4CAF50;
+      border-bottom: 1px solid #ccc;
+      padding-bottom: 5px;
+      margin-bottom: 15px;
+    }
+
+    .section p, .section ul {
+      margin: 5px 0;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    .two-column {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
+
+    .column {
+      flex: 1;
+      min-width: 250px;
+    }
+
+    @media print {
+      body {
+        background: none;
+        margin: 0;
+      }
+      .cv-container {
+        box-shadow: none;
+        border: none;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="cv-container">
+
+    <div class="header">
+      <img src="https://via.placeholder.com/100" alt="Profile Photo" class="profile-pic">
+      <div class="name-title">
+        <h1>Sangam sunar</h1>
+        <p>Web Developer | UI/UX Designer</p>
+        <p>Email: sangamsunar@gmail.com | Phone:9706584953</p>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Profile</h2>
+      <p>Motivated and creative web developer with 5+ years of experience designing responsive and user-friendly websites and applications. Skilled in HTML, CSS, JavaScript, and modern frameworks.</p>
+    </div>
+
+    <div class="section two-column">
+      <div class="column">
+        <h2>Education</h2>
+        <p><strong>B.Sc. in Computer Science</strong><br>DWIT College, 2023–2027</p>
+
+        <p><strong>High School</strong><br>Trinity International, 2020–2022</p>
+      </div>
+
+      <div class="column">
+        <h2>Skills</h2>
+        <ul>
+          <li>HTML5, CSS3, JavaScript</li>
+          <li>React, Angular</li>
+          <li>Node.js, Express</li>
+          <li>UI/UX Design</li>
+          <li>Figma, Adobe XD</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Experience</h2>
+      <p><strong>Frontend Developer</strong> – Deerhold Company (202–4Present)</p>
+      <ul>
+        <li>Developed responsive websites using React and Tailwind CSS.</li>
+        <li>Collaborated with designers to improve UI/UX based on user feedback.</li>
+        <li>Maintained and optimized company web applications.</li>
+      </ul>
+
+      <p><strong>Intern – Web Developer</strong> – f1 soft Solutions (2019)</p>
+      <ul>
+        <li>Built landing pages and implemented SEO best practices.</li>
+        <li>Assisted senior developers with bug fixes and testing.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Languages</h2>
+      <ul>
+        <li>English – Fluent</li>
+      </ul>
+    </div>
+
+  </div>
+
+</body>
+</html>

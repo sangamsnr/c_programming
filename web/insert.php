@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: hsl(233, 87%, 56%);
+            margin: 0;
+            padding: 0;
+        }
+        
+        form {
+            max-width: 500px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #a7abb1a3;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="number"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #c3b6b6;
+            border-radius: 4px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input[type="text"]:focus,
+        input[type="number"]:focus,
+        input[type="password"]:focus {
+            border-color: #0525f9;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            padding: 12px;
+            background-color: #027cff;
+            color: #fff;
+            border: none;
+            border-radius: 4px;
+            font-size: 18px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #03468e;
+        }
+        
+        img {
+            display: block;
+            margin-top: 20px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <h1 align="center">Sign Up</h1>
+        <p align="center">Please fill in this form to create an account</p>
+
+        <label for="fname">First Name</label>
+        <input type="text" placeholder="First name" id="fname" required>
+
+        <label for="mname">Middle Name</label>
+        <input type="text" placeholder="Middle name" id="mname" required>
+
+        <label for="lname">Last Name</label>
+        <input type="text" placeholder="Last name" id="lname" required>
+
+        <label for="email">Email</label>
+        <input type="text" placeholder="Email" id="email" required>
+
+        <label for="password">Password</label>
+        <input type="password" placeholder="Create password" id="password" required>
+
+        <label for="cpassword">Confirm Password</label>
+        <input type="password" placeholder="Confirm password" id="cpassword" required>
+
+        <label>
+            <input type="checkbox" required> I accept the Terms of Use & Privacy Policy
+        </label>
+        <br><br>
+        
+        <button type="submit">Sign Up</button>
+    </form>
+</body>
+</html>
+
+<?php
+require('new2.php');
+$status = "";
+
+if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    $username = $_required['username']; 
+    $password = $_required['password']; 
+
+    $insert_query = "INSERT INTO table1 (username, password) VALUES ('$username', '$password')";
+
+    if (mysqli_query($connection, $insert_query)) {
+        $status = "New Record Inserted Successfully.";
+    } else {
+        $status = "Error: " . mysqli_error($connection);
+    }
+}
+?>
+
+
+
